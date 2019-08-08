@@ -13,7 +13,6 @@ public class FbHomePage {
                 this.driver=driver; 
         }
  
-      
         
         //Using FindBy for locating elements
  @FindBy(how=How.XPATH, using="//div[text()='Account Settings']") WebElement profileDropdown;
