@@ -6,7 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
  
 public class FbHomePage {
- 
  WebDriver driver;
         public FbHomePage(WebDriver driver){ 
                 this.driver=driver; 
