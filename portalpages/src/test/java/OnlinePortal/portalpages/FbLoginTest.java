@@ -1,7 +1,5 @@
 package OnlinePortal.portalpages;
 
-
-
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
