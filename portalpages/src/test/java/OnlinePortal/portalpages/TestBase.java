@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -15,6 +16,8 @@ public class TestBase {
 	public void initialize() throws IOException{
 			
 		System.setProperty("webdriver.gecko.driver","C:\\Users\\Ganesh\\Documents\\selenium\\geckodriver.exe");
+		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+		capabilities.setCapability("marionette",true);
 		driver = new FirefoxDriver();		
 		//To maximize browser
                 driver.manage().window().maximize();
